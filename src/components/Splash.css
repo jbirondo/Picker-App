@@ -24,3 +24,131 @@
     width: 100px;
     transform: scaleX(-1);
 }
+
+.Arizona{
+    filter: invert(18%) sepia(43%) saturate(4098%) hue-rotate(326deg) brightness(86%) contrast(90%);
+}
+
+.Atlanta{
+filter: invert(13%) sepia(59%) saturate(5594%) hue-rotate(341deg) brightness(89%) contrast(90%);
+}
+
+.Baltimore{
+filter: invert(13%) sepia(51%) saturate(4000%) hue-rotate(242deg) brightness(84%) contrast(107%);
+}
+
+.Buffalo{
+filter: invert(12%) sepia(46%) saturate(6562%) hue-rotate(216deg) brightness(91%) contrast(101%);
+}
+
+.Carolina{
+filter: invert(37%) sepia(100%) saturate(1479%) hue-rotate(175deg) brightness(86%) contrast(101%);
+}
+
+.Chicago{
+filter: invert(18%) sepia(45%) saturate(7041%) hue-rotate(25deg) brightness(102%) contrast(97%);
+}
+
+.Cincinnati{
+filter: invert(46%) sepia(25%) saturate(6897%) hue-rotate(348deg) brightness(94%) contrast(109%);
+}
+
+.Cleveland{
+filter: invert(35%) sepia(86%) saturate(4263%) hue-rotate(359deg) brightness(100%) contrast(109%);
+}
+
+.Dallas{
+filter: invert(14%) sepia(33%) saturate(7155%) hue-rotate(213deg) brightness(100%) contrast(104%);
+}
+
+.Denver{
+filter: invert(48%) sepia(55%) saturate(6509%) hue-rotate(353deg) brightness(100%) contrast(98%);
+}
+
+.Detroit{
+filter: invert(25%) sepia(89%) saturate(2923%) hue-rotate(184deg) brightness(91%) contrast(101%);
+}
+
+.Green_Bay{
+filter: invert(15%) sepia(8%) saturate(2318%) hue-rotate(114deg) brightness(91%) contrast(85%);
+}
+
+.Houston{
+filter: invert(10%) sepia(62%) saturate(734%) hue-rotate(158deg) brightness(97%) contrast(100%);
+}
+
+.Indianapolis{
+filter: invert(13%) sepia(46%) saturate(3286%) hue-rotate(197deg) brightness(93%) contrast(102%);
+}
+
+.Jacksonville{
+filter: invert(20%) sepia(97%) saturate(6851%) hue-rotate(180deg) brightness(88%) contrast(101%);
+}
+
+.Kansas_City{
+filter: invert(16%) sepia(83%) saturate(3887%) hue-rotate(338deg) brightness(96%) contrast(95%);
+}
+
+[class*="L.A._Chargers"]{
+    filter: invert(28%) sepia(90%) saturate(1591%) hue-rotate(179deg) brightness(99%) contrast(101%);
+}
+
+[class*="L.A._Rams"]{
+filter: invert(11%) sepia(89%) saturate(3801%) hue-rotate(216deg) brightness(93%) contrast(101%);
+}
+
+.Miami{
+filter: invert(37%) sepia(97%) saturate(6233%) hue-rotate(171deg) brightness(106%) contrast(101%);
+}
+
+.Minnesota{
+filter: invert(15%) sepia(82%) saturate(2148%) hue-rotate(254deg) brightness(89%) contrast(94%);
+}
+
+.New_England{
+filter: invert(90%) sepia(6%) saturate(278%) hue-rotate(162deg) brightness(83%) contrast(84%);
+}
+
+.New_Orleans{
+filter: invert(99%) sepia(38%) saturate(1959%) hue-rotate(308deg) brightness(87%) contrast(89%);
+}
+
+[class*="N.Y._Giants"] {
+filter: invert(8%) sepia(59%) saturate(5081%) hue-rotate(223deg) brightness(91%) contrast(94%);
+}
+
+[class*="N.Y._Jets"] {
+filter: invert(24%) sepia(12%) saturate(3344%) hue-rotate(113deg) brightness(95%) contrast(86%);
+}
+
+.Oakland{
+filter: invert(0%) sepia(3%) saturate(7500%) hue-rotate(155deg) brightness(99%) contrast(103%);
+}
+
+.Philadelphia{
+    filter: invert(11%) sepia(55%) saturate(6687%) hue-rotate(176deg) brightness(96%) contrast(101%);
+}
+
+.Pittsburgh{
+    filter: invert(0%) sepia(3%) saturate(7500%) hue-rotate(155deg) brightness(99%) contrast(103%);
+}
+
+.San_Francisco{
+filter: invert(13%) sepia(75%) saturate(4543%) hue-rotate(354deg) brightness(84%) contrast(115%);
+}
+
+.Seattle{
+filter: invert(10%) sepia(46%) saturate(2830%) hue-rotate(192deg) brightness(94%) contrast(102%);
+}
+
+.Tampa_Bay{
+filter: invert(49%) sepia(25%) saturate(3016%) hue-rotate(360deg) brightness(102%) contrast(106%);
+}
+
+.Tennessee{
+filter: invert(61%) sepia(70%) saturate(3076%) hue-rotate(187deg) brightness(92%) contrast(86%);
+}
+
+.Washington{
+filter: invert(24%) sepia(8%) saturate(4030%) hue-rotate(296deg) brightness(95%) contrast(91%);
+}

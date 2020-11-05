@@ -43,10 +43,12 @@ class Splash extends React.Component{
     }
 
     singleMatchUp(matchUp){
+        let awayHelmClass = "awayHelmet " + matchUp["Away"]
+        let homeHelmClass = "homeHelmet " + matchUp["Home"]
         return(
             <div className="singleMatchUpContainer">
-                <img className="awayHelmet" src={helmet} alt=""></img>
-                <img className="homeHelmet" src={helmet} alt=""></img>
+                <img className={awayHelmClass} src={helmet} alt=""></img>
+                <img className={homeHelmClass} src={helmet} alt=""></img>
                 <div>{matchUp["Away"]}</div>
                 <div>{matchUp["Date/Time"]}</div>
                 <div>{matchUp["Favored By"]}</div>
