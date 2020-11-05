@@ -4,14 +4,15 @@
     align-items: space-around;
     flex-direction: column;
     width: 40%;
-    padding: 5% 5%;
+    margin: 3% 3%;
+    border: 2px solid red
 }
 
 .matchUpsContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: space-around;
+    align-content: space-evenly;
     padding: 0;
 }
 
@@ -34,6 +35,17 @@
 .helmetsAndInfo{
     display: flex;
     justify-content: space-between;
+}
+
+.domeIcon{
+    height: 50px;
+    width: 50px;
+    /* filter: invert(83%) sepia(53%) saturate(13%) hue-rotate(185deg) brightness(113%) contrast(65%); */
+}
+
+.weatherContainer{
+    display: flex;
+    flex-direction: row;
 }
 
 .Arizona{

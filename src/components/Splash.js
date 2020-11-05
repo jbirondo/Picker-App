@@ -1,7 +1,7 @@
 import React from "react"
 import "./Splash.css"
 import helmet from "./helmet.png"
-
+import dome from "./dome.jpg"
 
 class Splash extends React.Component{
     constructor(){
@@ -42,37 +42,56 @@ class Splash extends React.Component{
         })
     }
 
+    value(str){
+        let val = str.split(" ")
+        return val[0]
+    }
+
     singleMatchUp(matchUp){
         let awayHelmClass = "awayHelmet " + matchUp["Away"]
         let homeHelmClass = "homeHelmet " + matchUp["Home"]
-        if(matchUp["Temperature"] === "Dome"){
-            
-        }
+
+        let weather = matchUp["Temperature"] === "Dome" ? (
+            <div className="domeContainer">
+                <div>Dome</div>
+                <img className="domeIcon" src={dome} alt=""></img>
+            </div>
+        ) : (
+            <div className="weatherContainer">
+                <div>{this.value(matchUp["Precipitation"])}</div>
+                <div>{this.value(matchUp["Temperature"])}</div>
+                <div>{matchUp["Wind Direction"]}</div>
+                <div>{matchUp["Wind Speed"]}</div>
+            </div>
+        )
+
+        let awayVsHome = matchUp["Favorite"] === matchUp["Home"] ? (
+            <div className="awayVsHomeContainer">
+                <div>{matchUp["Away"].replace("_", " ")}</div>
+                <div>at</div>
+                <div>{matchUp["Home"].replace("_", " ")}</div>
+            </div>
+        ) : (
+            <div className="awayVsHomeContainer">
+                <div>{matchUp["Away"].replace("_", " ")}</div>
+                <div>at</div>
+                <div>{matchUp["Home"].replace("_", " ")}</div>
+            </div>
+        )
+
         return(
             <div className="singleMatchUpContainer">
-                <div className="awayVsHomeContainer">
-                    <div>{matchUp["Away"]}</div>
-                    <div>at</div>
-                    <div>{matchUp["Home"]}</div>
-                </div>
+                <div>{matchUp["Date/Time"]}</div>
                 <div className="helmetsAndInfo">
                     <img className={awayHelmClass} src={helmet} alt=""></img>
                     <div className="gamblingInfoContainer">
                         <div>{matchUp["Favorite"]} (-{matchUp["Favored By"]})</div>
                         <div>{matchUp["Over/Under"]}</div>
-                        <div className="weatherContainer">
-
-                        </div>
+                        {weather}
 
                     </div>    
                     <img className={homeHelmClass} src={helmet} alt=""></img>
                 </div>
-                <div>{matchUp["Date/Time"]}</div>
-                <div>{matchUp["Precipitation"]}</div>
-                <div>{matchUp["Temperature"]}</div>
-                <div>{matchUp["Underdog"]}</div>
-                <div>{matchUp["Wind Direction"]}</div>
-                <div>{matchUp["Wind Speed"]}</div>
             </div>
         )
     }
