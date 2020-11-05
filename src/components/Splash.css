@@ -1,0 +1,15 @@
+.singleMatchUpContainer{
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    flex-direction: column;
+    width: 40%;
+}
+
+.matchUpsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    padding: 0;
+}

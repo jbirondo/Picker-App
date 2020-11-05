@@ -1,4 +1,6 @@
 import React from "react"
+import "./Splash.css"
+
 
 class Splash extends React.Component{
     constructor(){
