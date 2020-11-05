@@ -31,6 +31,11 @@
     justify-content: space-between;
 }
 
+.helmetsAndInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
 .Arizona{
     filter: invert(18%) sepia(43%) saturate(4098%) hue-rotate(326deg) brightness(86%) contrast(90%);
 }
