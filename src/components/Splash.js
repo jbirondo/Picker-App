@@ -47,13 +47,19 @@ class Splash extends React.Component{
         let homeHelmClass = "homeHelmet " + matchUp["Home"]
         return(
             <div className="singleMatchUpContainer">
+                <div className="awayVsHomeContainer">
+                    <div>{matchUp["Away"]}</div>
+                    <div>at</div>
+                    <div>{matchUp["Home"]}</div>
+                </div>
+                <div className="helmetsAndInfo">
                 <img className={awayHelmClass} src={helmet} alt=""></img>
+
                 <img className={homeHelmClass} src={helmet} alt=""></img>
-                <div>{matchUp["Away"]}</div>
+                </div>
                 <div>{matchUp["Date/Time"]}</div>
                 <div>{matchUp["Favored By"]}</div>
                 <div>{matchUp["Favorite"]}</div>
-                <div>{matchUp["Home"]}</div>
                 <div>{matchUp["Over/Under"]}</div>
                 <div>{matchUp["Precipitation"]}</div>
                 <div>{matchUp["Temperature"]}</div>

@@ -4,6 +4,7 @@
     align-items: space-around;
     flex-direction: column;
     width: 40%;
+    padding: 5% 5%;
 }
 
 .matchUpsContainer{
@@ -23,6 +24,11 @@
     height: 100px;
     width: 100px;
     transform: scaleX(-1);
+}
+
+.awayVsHomeContainer{
+    display: flex;
+    justify-content: space-between;
 }
 
 .Arizona{
