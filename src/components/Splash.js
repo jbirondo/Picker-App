@@ -39,11 +39,33 @@ class Splash extends React.Component{
         })
     }
 
+    singleMatchUp(matchUp){
+        return(
+            <div className="singleMatchUpContainer">
+                <div>{matchUp["Away"]}</div>
+                <div>{matchUp["Date/Time"]}</div>
+                <div>{matchUp["Favored By"]}</div>
+                <div>{matchUp["Favorite"]}</div>
+                <div>{matchUp["Home"]}</div>
+                <div>{matchUp["Over/Under"]}</div>
+                <div>{matchUp["Precipitation"]}</div>
+                <div>{matchUp["Temperature"]}</div>
+                <div>{matchUp["Underdog"]}</div>
+                <div>{matchUp["Wind Direction"]}</div>
+                <div>{matchUp["Wind Speed"]}</div>
+            </div>
+        )
+    }
+
 
     render(){
-        console.table(this.state.matchUps)
+        
         return(
-            <div>"Hello World</div>
+            <div className="matchUpsContainer">
+                {this.state.matchUps.map(matchUp => {
+                    return this.singleMatchUp(matchUp)
+                })}
+            </div>
         )
     }
 }
