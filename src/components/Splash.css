@@ -13,3 +13,14 @@
     align-content: space-around;
     padding: 0;
 }
+
+.awayHelmet{
+    height: 100px;
+    width: 100px;
+}
+
+.homeHelmet{
+    height: 100px;
+    width: 100px;
+    transform: scaleX(-1);
+}

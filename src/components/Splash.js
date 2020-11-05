@@ -1,5 +1,6 @@
 import React from "react"
 import "./Splash.css"
+import helmet from "./helmet.png"
 
 
 class Splash extends React.Component{
@@ -44,6 +45,8 @@ class Splash extends React.Component{
     singleMatchUp(matchUp){
         return(
             <div className="singleMatchUpContainer">
+                <img className="awayHelmet" src={helmet} alt=""></img>
+                <img className="homeHelmet" src={helmet} alt=""></img>
                 <div>{matchUp["Away"]}</div>
                 <div>{matchUp["Date/Time"]}</div>
                 <div>{matchUp["Favored By"]}</div>
