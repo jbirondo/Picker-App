@@ -2,7 +2,7 @@ import React from "react"
 import "./Splash.css"
 import helmet from "./helmet.png"
 import dome from "./dome.jpg"
-import teams from "./Teams"
+import teamLogo from "./TeamLogos"
 
 
 class Splash extends React.Component{
@@ -80,7 +80,6 @@ class Splash extends React.Component{
                 <div>{matchUp["Home"].replace("_", " ")}</div>
             </div>
         )
-        teams(matchUp["Home"])
 
         return(
             <div className="singleMatchUpContainer">
