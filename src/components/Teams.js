@@ -1,13 +1,13 @@
 module.exports = (teamname) => {
     switch (teamname) {
         case "Arizona":
-            break
+            return "http://loodibee.com/wp-content/uploads/nfl-arizona-cardinals-team-logo-2.png"
         case "Atlanta":
-            break
+            return "http://loodibee.com/wp-content/uploads/nfl-atlanta-falcons-team-logo-2.png"
         case "Baltimore":
-            break
+            return "http://loodibee.com/wp-content/uploads/nfl-baltimore-ravens-team-logo-2.png"
         case "Buffalo":
-            break
+            return "http://loodibee.com/wp-content/uploads/nfl-buffalo-bills-team-logo-2.png"
         case "Carolina":
             break
         case "Chicago":
@@ -63,6 +63,7 @@ module.exports = (teamname) => {
         case "Tennessee":
             break
         case "Washington":
+            return 
             break
     }
 }
