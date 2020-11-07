@@ -64,5 +64,7 @@ module.exports = (teamname) => {
             return "http://loodibee.com/wp-content/uploads/nfl-tennessee-titans-team-logo-2.png"
         case "Washington":
             return "http://loodibee.com/wp-content/uploads/washington-football-team-2020-logo.png"
+        default:
+            return
     }
 }
