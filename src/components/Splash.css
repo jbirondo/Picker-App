@@ -5,7 +5,8 @@
     flex-direction: column;
     width: 40%;
     margin: 3% 3%;
-    border: 2px solid red
+    border: 2px solid red;
+    border-radius: 15px;
 }
 
 .matchUpsContainer{
