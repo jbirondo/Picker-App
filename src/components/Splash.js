@@ -69,11 +69,11 @@ class Splash extends React.Component{
             <div className="awayVsHomeContainer">
                 <div>{matchUp["Away"].replace("_", " ")}</div>
                 <div>at</div>
-                <div>{matchUp["Home"].replace("_", " ")}</div>
+                <div>(-{matchUp["Favored By"]}){matchUp["Home"].replace("_", " ")}</div>
             </div>
         ) : (
             <div className="awayVsHomeContainer">
-                <div>{matchUp["Away"].replace("_", " ")}</div>
+                <div>{matchUp["Away"].replace("_", " ")}(-{matchUp["Favored By"]})</div>
                 <div>at</div>
                 <div>{matchUp["Home"].replace("_", " ")}</div>
             </div>
@@ -85,13 +85,12 @@ class Splash extends React.Component{
                 <div className="helmetsAndInfo">
                     <img className={awayHelmClass} src={helmet} alt=""></img>
                     <div className="gamblingInfoContainer">
-                        <div>{matchUp["Favorite"]} (-{matchUp["Favored By"]})</div>
                         <div>{matchUp["Over/Under"]}</div>
                         {weather}
-
                     </div>    
                     <img className={homeHelmClass} src={helmet} alt=""></img>
                 </div>
+                {awayVsHome}
             </div>
         )
     }

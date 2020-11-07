@@ -48,6 +48,22 @@
     flex-direction: row;
 }
 
+.gamblingInfoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.awayVsHomeContainer > *{
+    width: 33%
+}
+
+/* .helmetsAndInfo > * {
+    width: 33%
+} */
+
 .Arizona{
     filter: invert(18%) sepia(43%) saturate(4098%) hue-rotate(326deg) brightness(86%) contrast(90%);
 }
