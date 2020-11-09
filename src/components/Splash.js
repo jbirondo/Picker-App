@@ -78,17 +78,37 @@ class Splash extends React.Component{
                 <div>{matchUp["Home"].replace("_", " ")}</div>
             </div>
         )
-        
-        return(
-            <div className="singleMatchUpContainer">
-                <div>{matchUp["Date/Time"]}</div>
+
+        let gamblingInfo = matchUp["Favorite"] === matchUp["Home"] ? (
                 <div className="helmetsAndInfo">
                     <img className={awayHelmClass} src={teamLogo(matchUp["Away"])} alt=""></img>
+                    <div className="gamblingInfoContainer">
+                        <div>{matchUp["Over/Under"]}</div>
+                    </div>
+                    <div>
+                        <div>(-{matchUp["Favored By"]})</div>
+                        <img className={homeHelmClass} src={teamLogo(matchUp["Home"])} alt=""></img>
+                    </div>    
+                </div>
+        ) : (
+                <div className="helmetsAndInfo">
+                    <div>
+                        <img className={awayHelmClass} src={teamLogo(matchUp["Away"])} alt=""></img>
+                        <div>(-{matchUp["Favored By"]})</div>
+                    </div>
                     <div className="gamblingInfoContainer">
                         <div>{matchUp["Over/Under"]}</div>
                     </div>    
                     <img className={homeHelmClass} src={teamLogo(matchUp["Home"])} alt=""></img>
                 </div>
+        )
+
+
+        
+        return(
+            <div className="singleMatchUpContainer">
+                <div>{matchUp["Date/Time"]}</div>
+                {gamblingInfo}
                 {weather}        
             </div>
         )
