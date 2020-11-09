@@ -31,7 +31,7 @@ module.exports = (teamname) => {
         case "Jacksonville":
             return "http://loodibee.com/wp-content/uploads/nfl-jacksonville-jaguars-team-logo-2.png"
         case "Kansas_City":
-            return "http://loodibee.com/wp-content/uploads/nfl-kansas-city-cheifs-team-logo-2.png"
+            return "http://loodibee.com/wp-content/uploads/nfl-kansas-city-chiefs-team-logo-2.png"
         case "L.A._Chargers":
             return "http://loodibee.com/wp-content/uploads/nfl-los-angeles-chargers-team-logo-2.png"
         case "L.A._Rams":
@@ -48,8 +48,8 @@ module.exports = (teamname) => {
             return "http://loodibee.com/wp-content/uploads/nfl-new-york-giants-team-logo-2.png"
         case "N.Y._Jets":
             return "http://loodibee.com/wp-content/uploads/nfl-new-york-giants-team-logo-2.png"
-        case "Oakland":
-            return "http://loodibee.com/wp-content/uploads/nfl-las-vegas-raiders-team-logo-2.png"
+        case "Las_Vegas":
+            return "http://loodibee.com/wp-content/uploads/nfl-oakland-raiders-team-logo.png"
         case "Philadelphia":
             return "http://loodibee.com/wp-content/uploads/nfl-philadelphia-eagles-team-logo-2.png"
         case "Pittsburgh":

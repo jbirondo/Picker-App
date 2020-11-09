@@ -25,7 +25,7 @@
 .homeHelmet{
     height: 100px;
     width: 100px;
-    transform: scaleX(-1);
+    /* transform: scaleX(-1); */
 }
 
 .awayVsHomeContainer{
@@ -47,6 +47,8 @@
 .weatherContainer{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .gamblingInfoContainer{
@@ -65,7 +67,7 @@
     width: 33%
 } */
 
-.Arizona{
+/* .Arizona{
     filter: invert(18%) sepia(43%) saturate(4098%) hue-rotate(326deg) brightness(86%) contrast(90%);
 }
 
@@ -191,4 +193,4 @@ filter: invert(61%) sepia(70%) saturate(3076%) hue-rotate(187deg) brightness(92%
 
 .Washington{
 filter: invert(24%) sepia(8%) saturate(4030%) hue-rotate(296deg) brightness(95%) contrast(91%);
-}
+} */

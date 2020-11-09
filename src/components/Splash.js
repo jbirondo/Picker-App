@@ -55,7 +55,6 @@ class Splash extends React.Component{
 
         let weather = matchUp["Temperature"] === "Dome" ? (
             <div className="domeContainer">
-                <div>Dome</div>
                 <img className="domeIcon" src={dome} alt=""></img>
             </div>
         ) : (
@@ -88,11 +87,10 @@ class Splash extends React.Component{
                     <img className={awayHelmClass} src={teamLogo(matchUp["Away"])} alt=""></img>
                     <div className="gamblingInfoContainer">
                         <div>{matchUp["Over/Under"]}</div>
-                        {weather}
                     </div>    
                     <img className={homeHelmClass} src={teamLogo(matchUp["Home"])} alt=""></img>
                 </div>
-                {awayVsHome}
+                {weather}
             </div>
         )
     }
