@@ -1,6 +1,5 @@
 import React from "react"
 import "./Splash.css"
-import helmet from "./helmet.png"
 import dome from "./dome.jpg"
 import teamLogo from "./TeamLogos"
 
@@ -79,7 +78,7 @@ class Splash extends React.Component{
                 <div>{matchUp["Home"].replace("_", " ")}</div>
             </div>
         )
-
+        
         return(
             <div className="singleMatchUpContainer">
                 <div>{matchUp["Date/Time"]}</div>
@@ -90,7 +89,7 @@ class Splash extends React.Component{
                     </div>    
                     <img className={homeHelmClass} src={teamLogo(matchUp["Home"])} alt=""></img>
                 </div>
-                {weather}
+                {weather}        
             </div>
         )
     }

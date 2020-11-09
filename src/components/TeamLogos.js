@@ -1,3 +1,5 @@
+
+
 module.exports = (teamname) => {
     switch (teamname) {
         case "Arizona":
