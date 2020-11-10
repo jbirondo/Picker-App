@@ -2,9 +2,8 @@ import React from "react"
 import "./Splash.css"
 import dome from "./dome.jpg"
 import teamLogo from "./TeamLogos"
-import wind from "./wind.jpg"
-import rain from "./rain.jpg"
-import sun from "./sun.jpg"
+import wind from "./wind.png"
+import rain from "./rain.png"
 import temp from "./temp.png"
 
 
@@ -62,13 +61,18 @@ class Splash extends React.Component{
             </div>
         ) : (
             <div className="weatherContainer">
-                <img className="icon" src={rain} alt=""></img>  
-                <div>{this.value(matchUp["Precipitation"])}</div>
-                <img className="icon" src={temp} alt=""></img>  
-                <div>{this.value(matchUp["Temperature"])}</div>
-                <img className="icon" src={wind} alt=""></img>  
-                <div>{matchUp["Wind Direction"]}</div>
-                <div>{matchUp["Wind Speed"]}</div>
+                <div>
+                    <img className="icon" src={rain} alt=""></img>  
+                    <div>{this.value(matchUp["Precipitation"])}</div>
+                </div>
+                <div>
+                    <img className="icon" src={temp} alt=""></img>  
+                    <div>{this.value(matchUp["Temperature"])}</div>
+                </div>
+                <div>
+                    <img className="icon" src={wind} alt=""></img>  
+                    <div>{matchUp["Wind Speed"]}</div>
+                </div>
             </div>
         )
 
