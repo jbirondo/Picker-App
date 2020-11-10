@@ -49,7 +49,7 @@ module.exports = (teamname) => {
         case "N.Y._Giants":
             return "http://loodibee.com/wp-content/uploads/nfl-new-york-giants-team-logo-2.png"
         case "N.Y._Jets":
-            return "http://loodibee.com/wp-content/uploads/nfl-new-york-giants-team-logo-2.png"
+            return "http://loodibee.com/wp-content/uploads/nfl-new-york-jets-team-logo.png"
         case "Las_Vegas":
             return "http://loodibee.com/wp-content/uploads/nfl-oakland-raiders-team-logo.png"
         case "Philadelphia":

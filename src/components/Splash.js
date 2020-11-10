@@ -108,8 +108,14 @@ class Splash extends React.Component{
         return(
             <div className="singleMatchUpContainer">
                 <div>{matchUp["Date/Time"]}</div>
-                {gamblingInfo}
-                {weather}        
+                <div className="helmetsAndInfo">
+                    <img className={awayHelmClass} src={teamLogo(matchUp["Away"])} alt=""></img>
+                    {weather}  
+                    <img className={homeHelmClass} src={teamLogo(matchUp["Home"])} alt=""></img>
+                </div>
+                <div className="gamblingInfoContainer">
+                    <div>{matchUp["Over/Under"]}</div>
+                </div>        
             </div>
         )
     }

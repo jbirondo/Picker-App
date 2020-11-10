@@ -59,9 +59,9 @@
     flex-basis: 50%;
 }
 
-.awayVsHomeContainer > *{
-    width: 33%
-}
+/* .helmetsAndInfo > *{
+    flex-basis: 33%
+} */
 
 /* .helmetsAndInfo > * {
     width: 33%
