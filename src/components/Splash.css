@@ -9,6 +9,10 @@
     border-radius: 20px;
 }
 
+.singleMatchUpContainer:hover{
+    background-color:lightgray;
+}
+
 .matchUpsContainer{
     display: flex;
     flex-wrap: wrap;
@@ -20,27 +24,29 @@
 .awayHelmet{
     height: 100px;
     width: 100px;
+    justify-self: center;
 }
 
 .homeHelmet{
     height: 100px;
     width: 100px;
-    /* transform: scaleX(-1); */
+    justify-self: center;
 }
 
 .awayVsHomeContainer{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 33% 33% 33%
+
 }
 
 .helmetsAndInfo{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 33% 33% 33%
 }
 
 .domeIcon{
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     /* filter: invert(83%) sepia(53%) saturate(13%) hue-rotate(185deg) brightness(113%) contrast(65%); */
 }
 

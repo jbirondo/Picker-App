@@ -1,6 +1,6 @@
 import React from "react"
 import "./Splash.css"
-import dome from "./dome.jpg"
+import dome from "./dome.png"
 import teamLogo from "./TeamLogos"
 import wind from "./wind.png"
 import rain from "./rain.png"
@@ -105,13 +105,17 @@ class Splash extends React.Component{
         let awayVsHome = matchUp["Favorite"] === matchUp["Home"] ? (
             <div className="awayVsHomeContainer">
                 <div>{matchUp["Away"].replace("_", " ")}</div>
-                <div>at</div>
+                <div className="gamblingInfoContainer">
+                    <div>{matchUp["Over/Under"]}</div>
+                </div>      
                 <div>(-{matchUp["Favored By"]}){matchUp["Home"].replace("_", " ")}</div>
             </div>
         ) : (
             <div className="awayVsHomeContainer">
                 <div>{matchUp["Away"].replace("_", " ")}(-{matchUp["Favored By"]})</div>
-                <div>at</div>
+                <div className="gamblingInfoContainer">
+                    <div>{matchUp["Over/Under"]}</div>
+                </div>      
                 <div>{matchUp["Home"].replace("_", " ")}</div>
             </div>
         )
@@ -150,9 +154,10 @@ class Splash extends React.Component{
                     {weather}  
                     <img className={homeHelmClass} src={teamLogo(matchUp["Home"])} alt=""></img>
                 </div>
-                <div className="gamblingInfoContainer">
+                {/* <div className="gamblingInfoContainer">
                     <div>{matchUp["Over/Under"]}</div>
-                </div>      
+                </div>       */}
+                {awayVsHome}
             </div>
         )
     }
