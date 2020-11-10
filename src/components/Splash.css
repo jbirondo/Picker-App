@@ -59,6 +59,12 @@
     flex-basis: 50%;
 }
 
+.icon{
+    height: 50px;
+    width: 50px;
+    /* filter: invert(9%) sepia(100%) saturate(7039%) hue-rotate(247deg) brightness(91%) contrast(146%); */
+}
+
 /* .helmetsAndInfo > *{
     flex-basis: 33%
 } */
