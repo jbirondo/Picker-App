@@ -65,6 +65,18 @@
     /* filter: invert(9%) sepia(100%) saturate(7039%) hue-rotate(247deg) brightness(91%) contrast(146%); */
 }
 
+.green{
+    color: green;
+}
+
+.orange{
+    color: orange;
+}
+
+.red{
+    color: red;
+}
+
 /* .helmetsAndInfo > *{
     flex-basis: 33%
 } */

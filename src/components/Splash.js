@@ -51,6 +51,32 @@ class Splash extends React.Component{
         return val[0]
     }
 
+    rainClass(str){
+        if(parseFloat(str) > 50){
+            return "red"
+        } else if(parseFloat(str) > 30 && parseFloat(str) <= 50){
+            return "orange"
+        } else {
+            return "green"
+        }
+    }
+    tempClass(str){
+        if(parseFloat(str) > 107){
+            return "red"
+        } else {
+            return "green"
+        }
+    }
+    windClass(str){
+        if(parseFloat(str) >= 20){
+            return "red"
+        } else if(parseFloat(str) >= 10 && parseFloat(str) < 20){
+            return "orange"
+        } else {
+            return "green"
+        }
+    }
+
     singleMatchUp(matchUp){
         let awayHelmClass = "awayHelmet " + matchUp["Away"]
         let homeHelmClass = "homeHelmet " + matchUp["Home"]
@@ -63,15 +89,15 @@ class Splash extends React.Component{
             <div className="weatherContainer">
                 <div>
                     <img className="icon" src={rain} alt=""></img>  
-                    <div>{this.value(matchUp["Precipitation"])}</div>
+                    <div className={this.rainClass(this.value(matchUp["Precipitation"]))}>{this.value(matchUp["Precipitation"])}</div>
                 </div>
                 <div>
                     <img className="icon" src={temp} alt=""></img>  
-                    <div>{this.value(matchUp["Temperature"])}</div>
+                    <div className={this.tempClass(this.value(matchUp["Temperature"]))}>{this.value(matchUp["Temperature"])}</div>
                 </div>
                 <div>
                     <img className="icon" src={wind} alt=""></img>  
-                    <div>{matchUp["Wind Speed"]}</div>
+                    <div className={this.windClass(matchUp["Wind Speed"])}>{matchUp["Wind Speed"]}</div>
                 </div>
             </div>
         )
